@@ -10,7 +10,7 @@ Plataforma de desenvolvimento: LARAVEL
 
 Descrição do website: O website da empresa fictícia "AGO construção e imobiliária", tem como finalidade divulgar e gerir a carteira de imóveis da empresa "AGO", para além do website existe uma aplicação mobile que permite aos clientes visualizar os imóveis em Realidade Aumentada (AR) mesmo antes de serem construídos.
 
-Âmbito do projeto: Ser um elemento do Projeto Final de Curso de Agostinho Martins para a Licenciatura do Multimédia do Instituto Superior Miguel torga.
+Âmbito do projeto: Ser um elemento do Projeto Final de Curso de Agostinho Martins para a Licenciatura do Multimédia do Instituto Superior Miguel Torga.
 
 Plataformas desktop suportadas: Windows, Linux, MAC
 
