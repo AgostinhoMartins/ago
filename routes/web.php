@@ -13,5 +13,5 @@
 
 Route::view('/','welcome');
 Route::resource('home', 'HomeController');
-Route::resource('home', 'ContactosController');
-Route::resource('home', 'SobrenosController');
+Route::resource('contactos', 'ContactosController');
+Route::resource('sobre-nos', 'SobrenosController');
