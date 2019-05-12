@@ -1,2 +1,2 @@
-<h1>Website da empresa AGO em construção</h1>
-<h3>Brevemente estaremos online</h3>
+<h1>Pagina inicial (INÍCIO) do website da empresa AGO</h1>
+<h3>Em construção - Brevemente estaremos online</h3>
