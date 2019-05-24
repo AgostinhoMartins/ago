@@ -1,0 +1,216 @@
+/****************************************************************************
+* Nome do ficheiro: style.css                                               *
+* Website: agostinhomartins.com                                             *
+* @author Agostinho Martins                                                 *
+* @versão 1.0                                                               *
+* Data: 5 Maio de 2019                                                      *
+* Descrição: Folha de estilos styles.css do website agostinhomartins.com    *
+****************************************************************************/
+@charset "utf-8";
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: SourceSansPro-SemiBold;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
+
+
+/***********************************************************************
+* Retira o espaço em branco entre as section                           *
+************************************************************************/
+section {
+    /* margin: 0; */
+                /* padding: 0.1px;*/
+}
+
+/************************************************************************
+* Definição do Menu                                                     *
+************************************************************************/
+.navbar{
+    font-family: SourceSansPro-regular;
+    font-size: 1.05em;
+    font-weight: 550;
+}
+
+.botaologin{
+    margin-right: auto;
+}
+
+
+/************************************************************************
+* O <main> está dividido por zonas com o .container-fluid, definições   *
+*************************************************************************/
+.sec-1{
+    position: relative;
+    padding: 0 100px;
+    width: 100%;
+}
+.sec-2{
+    position: relative;
+    padding: 0 100px;
+    width: 100%;
+}
+
+
+/************************************************************************
+* background dos vários .container-fluid                                *
+*************************************************************************/
+
+.bg-footer {
+    background-color: #000000; /* zona verde*/
+    color: #ffffff;
+}
+
+/************************************************************************
+* caracteristicas das páginas de registo                                *
+************************************************************************/
+/* Todos os labels das páginas ficam a verde  */
+label{
+    font-family: SourceSansPro-SemiBold;
+    color: Green  ;
+}
+/* background do picker */
+.input-group-text{
+    background-color: rgb(19, 185, 19) ;
+}
+
+
+.tab-center{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centrar-botao{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/***********************************************************************
+*************************  MEDIA QUERIES *******************************
+* Media queries para o Mobile, Tablet e Desktop                        *
+************************************************************************
+************************************************************************/
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1201px) {
+    /* Definição da imagem do topo da página */
+
+
+    .imagemfundo {
+        background-image: url("../imagens/logoAgo26b.png");
+        background-repeat: no-repeat;
+        background-position: top center !important;
+        height: calc(-30px + 100vh);
+        opacity: 0.9;
+        /* margin: 0 80px 0 80px; */
+    }
+    .navbar-brand {
+        background-image: url("../imagens/logoAgo26b.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width : 14em;
+        height : 6em;
+        margin-right: 1.5em;
+        margin-left: 0.0em;
+        max-width: 1240px;
+
+    }
+    .flex-fill {
+        flex:1;
+     }
+
+    .menu {
+        margin-right: 100px;
+        margin-left: 60px;
+        width: 100%;
+    }
+    .botoes-do-menu-do-meio{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Slogan "construímos projetos inovadores" */
+    .slogan1 {
+        padding-top: 1.3em;
+
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        color: white;
+        font-family: SourceSansPro-Bold;
+        font-size: 2.8em;
+        font-weight: 700;
+        letter-spacing: -.0195em;
+    }
+
+    .slogan2 {
+        padding-bottom: 1.5em;
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+        text-align: right;
+        color: white;
+        font-family: SourceSansPro-Bold;
+        font-size: 2.8em;
+        font-weight: 700;
+
+
+    }
+
+    /*** Espaço verde com o texto "construímos projetos inovadores" ***/
+
+    /* caixa de fundo verde */
+    .caixa1 {
+        background-color: #3c8e2b;
+        height: calc(100% - 200px);
+        width: 50%;
+        margin-left: 52%;
+    }
+
+
+    /* Barra de pesquisa sobre a imagem de fundo */
+    .pesquisa {
+        padding-top: 2.7em;
+        padding-bottom: 15em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media screen and (max-width : 1200px) and (min-width:992px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media screen and (max-width : 992px) and (min-width:767px) {
+
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width : 768px) and (min-width:577px) {
+
+}
+/* Extra Small Devices, Phones */
+@media screen and (max-width : 576px) and (min-width:0px) {
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+/*******************************************************************
+* Nome do ficheiro: style.css                                      *
+* UC: P2                                                           *
+* @author Agostinho Martins                                        *
+* @versão 1.1                                                      *
+* Data: 5 Maio de 2019                                             *
+* Descrição: Folha de estilos styles.css do website da empresa AGO *
+********************************************************************/
+@charset "utf-8";
+
+@font-face {
+    font-family: Poppins-normal;
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: Oswald-normal;
+    src: url("../fonts/oswald/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: Oswald-medium;
+    src: url("../fonts/oswald/Oswald-Medium.ttf");
+}
+@font-face {
+    font-family: Roboto-normal;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: SourceSansPro-SemiBold;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
+
+/***********************************************************************
+* Alteração dos parametros do body                                     *
+************************************************************************/
+body {
+    position: relative;
+}
+
+
+/***********************************************************************
+* Retira o espaço em branco entre as section                           *
+************************************************************************/
+section {
+    margin: 0;
+   /* padding: 0.1px;*/
+}
+
+/***********************************************************************
+* Definição do Menu                                           *
+************************************************************************/
+.navbar{
+    font-family: SourceSansPro-regular;
+    font-size: 1.05em;
+    font-weight: 550;
+}
+
+.botaologin{
+    margin-right: auto;
+}
+
+
+/************************************************************************
+* background dos vários .container-fluid                                *
+*************************************************************************/
+.bg-1 {
+    background-color: #1abc9c; /* zona verde*/
+    color: #ffffff;
+}
+.bg-footer {
+    background-color: #000000; /* zona verde*/
+    color: #ffffff;
+}
+
+/* Testes para saber os limites das tags, não se deve usar em modo produção */
+.linha-azul{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+.linha-vermelha{
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+
+/***********************************************************************
+*************************  MEDIA QUERIES *******************************
+*           Media queries para o Mobile, Tablet e Desktop              *
+************************************************************************
+************************************************************************/
+
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1201px) {
+
+    /* Definição do menu */
+    .navbar-brand {
+        background-image: url("../imagens/logoAgo34.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width : 14em;
+        height : 6em;
+        margin-right: 0.5em;
+        margin-left: 4em;
+        max-width: 1240px;
+    }
+
+    .botoes-do-menu-do-meio{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* espaço em branco à volta da imagem */
+    .section-1 {
+        margin: 0 0px 0 85px;    /* top right bottom left */
+    }
+
+    /* Propriedades da imagem do topo da página */
+    .imagemfundo {
+        background-image: url("../imagens/imagemfundo6.jpg");
+        background-repeat: no-repeat;
+        background-position: top center !important;
+        height: calc(-30px + 100vh);
+        opacity: 0.9;
+    }
+
+    /*** Espaço verde com o texto "construímos projetos inovadores" ***/
+
+    /* caixa de fundo verde */
+    #texto-forma-sobre-a-imagem {
+        padding-top: 10em;
+    }
+    .caixa1 {
+        background-color: #00ae09;
+        /* background-color: #3c8e2b;  para a versão verde logo */
+        height: calc(100% - 200px);
+        /* width: 40%; */
+        /* margin-left: 52%; */
+
+    }
+
+    /* Slogan "construímos projetos inovadores" */
+    .slogan1 {
+        padding-top: 1.3em;
+
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        color: white;
+        font-family: SourceSansPro-Bold;
+        font-size: 2.8em;
+        font-weight: 700;
+        letter-spacing: -.0195em;
+    }
+
+    .slogan2 {
+        padding-bottom: 1.5em;
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+        text-align: right;
+        color: white;
+        font-family: SourceSansPro-Bold;
+        font-size: 2.8em;
+        font-weight: 700;
+    }
+
+    /* Barra de pesquisa sobre a imagem de fundo */
+    .pesquisa {
+        padding-top: 2.7em;
+        padding-bottom: 15em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
