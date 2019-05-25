@@ -1,98 +1,78 @@
-<!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>AGO</title>
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/styles2.css') }}" >
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/tempusdominus-bootstrap-4.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('fonts/fontawesome-free/fontawesome-free-5.8.1-web/css/all.css') }}">
-        <script  src="{{ asset('js/jquery-3.4.0.min.js') }}"></script>
-    </head>
-    <?php
-        /**************** Descrição do documento ****************
-        * Nome do ficheiro: index.blade.php                     *
-        * UC: Projeto Multimédia                                *
-        * @autor Agostinho Martins                              *
-        * @versão 1.0                                           *
-        * Data: 24 Maio de 2019                                  *
-        * Descrição: Lista de Propriedades do site AGO          *
-        ********************************************************/
-    ?>
-    <body>
-        <br>
-        <table class="table-bordered table-sm text-center tab-center">
-            <tr class="bg-success tab-texto">
+<?php
+/**************** Descrição do documento ****************
+* Nome do ficheiro: index.blade.php                     *
+* UC: Projeto Multimédia                                *
+* @autor Agostinho Martins                              *
+* @versão 1.0                                           *
+* Data: 25 Maio de 2019                                 *
+* Descrição: Lista das Propriedades do site AGO          *
+********************************************************/
+?>
+@extends('layouts.master')
 
-                <th>ID</th>
-                <th>Nome da Propriedade</th>
-                <th>Cidade</th>
-                <th>Freguesia</th>
-                <th>Zona</th>
-                <th>Codigo Postal</th>
-                <th>Tipo de propriedade</th>
-                <th>Area da Propriedade</th>
-                <th>Estado Juridico</th>
-                <th>Tipologia</th>
-                <th>Certificado de Energia</th>
-                <th>Fase de construcao</th>
-                <th>Estado de conservacao</th>
-                <th>Numero de Garagens</th>
-                <th>Numero de Quartos</th>
-                <th>Numero de varandas</th>
-                <th>Numero de quartos de banhos</th>
-                <th>Permitir animais</th>
-                <th>Data (inserção)</th>
-                <th>Data (atualização)</th>
-                <th>Editar</th>
-                <th>Apagar</th>
-            </tr>
+@section('content')
+    <br>
+    <table class="table-bordered table-sm text-center tab-center">
+        <tr class="bg-success tab-texto">
 
-            <?php foreach($propriedades as $propriedade): ?>
-            <tr>
-                <td><?php echo $propriedade->id; ?></td>
-                <td><?php echo $propriedade->nomePropriedade; ?></td>
-                <td><?php echo $propriedade->cidade; ?></td>
-                <td><?php echo $propriedade->freguesia; ?></td>
-                <td><?php echo $propriedade->zona; ?></td>
-                <td><?php echo $propriedade->codigoPostal; ?></td>
-                <td><?php echo $propriedade->tipoDePropriedadeID->tipoDePropriedade; ?></td>
-                <td><?php echo $propriedade->areaPropriedade; ?></td>
-                <td><?php echo $propriedade->estadoJuridicoID->estadoJuridico; ?></td>
-                <td><?php echo $propriedade->tipologia; ?></td>
-                <td><?php echo $propriedade->certificadoEnergia; ?></td>
-                <td><?php echo $propriedade->faseDeConstrucaoID->faseDeConstrucao; ?></td>
-                <td><?php echo $propriedade->estadoDeConservacaoID->estadoDeConservacao; ?></td>
-                <td><?php echo $propriedade->numeroQuartos; ?></td>
-                <td><?php echo $propriedade->numeroGaragem; ?></td>
-                <td><?php echo $propriedade->numeroVarandas; ?></td>
-                <td><?php echo $propriedade->numeroQuartosBanhos; ?></td>
-                <td><?php echo $propriedade->permitirAnimais; ?></td>
-                <td><?php echo $propriedade->created_at->format('d/m/Y'); ?></td>
-                <td><?php echo $propriedade->updated_at->format('d/m/Y'); ?></td>
-                <td><a class="btn btn-success tab-botao" href="{{ URL::route('propriedade.edit', $propriedade->id) }}">editar </a> </td>
-                <td>
-                    <form action="{{ route('propriedade.destroy', $propriedade->id) }}" method="POST"> <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <input type="hidden" name="_method" value="DELETE">
-                        <button type="submit" class="btn btn-danger tab-botao">Apagar</button>
-                    </form>
-                </td>
-            </tr>
-            <?php endforeach ?>
+            <th>ID</th>
+            <th>Nome da Propriedade</th>
+            <th>Cidade</th>
+            <th>Freguesia</th>
+            <th>Zona</th>
+            <th>Codigo Postal</th>
+            <th>Tipo de propriedade</th>
+            <th>Area da Propriedade</th>
+            <th>Estado Juridico</th>
+            <th>Tipologia</th>
+            <th>Certificado de Energia</th>
+            <th>Fase de construcao</th>
+            <th>Estado de conservacao</th>
+            <th>Numero de Garagens</th>
+            <th>Numero de Quartos</th>
+            <th>Numero de varandas</th>
+            <th>Numero de quartos de banhos</th>
+            <th>Permitir animais</th>
+            <th>Data (inserção)</th>
+            <th>Data (atualização)</th>
+            <th>Editar</th>
+            <th>Apagar</th>
+        </tr>
 
-        </table><br>
-        <div class="centrar-botao">
-                <a class="btn btn-info botao-ext bg-success"  href="{{ URL::route('propriedade.create') }}">Inserir nova Propriedade...</a>
-            </div><br><br>
-        <!-- JavaScripts -->
-        <script src="{{ asset('js/jquery-3.4.0.min.js') }}"></script>
-        <script src="{{ asset('js/popper.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/script.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/moment-with-locales.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/tempusdominus-bootstrap-4.min.js') }}"></script>
-    </body>
-</html>
+        <?php foreach($propriedades as $propriedade): ?>
+        <tr>
+            <td><?php echo $propriedade->id; ?></td>
+            <td><?php echo $propriedade->nomePropriedade; ?></td>
+            <td><?php echo $propriedade->cidade; ?></td>
+            <td><?php echo $propriedade->freguesia; ?></td>
+            <td><?php echo $propriedade->zona; ?></td>
+            <td><?php echo $propriedade->codigoPostal; ?></td>
+            <td><?php echo $propriedade->tipoDePropriedadeID->tipoDePropriedade; ?></td>
+            <td><?php echo $propriedade->areaPropriedade; ?></td>
+            <td><?php echo $propriedade->estadoJuridicoID->estadoJuridico; ?></td>
+            <td><?php echo $propriedade->tipologia; ?></td>
+            <td><?php echo $propriedade->certificadoEnergia; ?></td>
+            <td><?php echo $propriedade->faseDeConstrucaoID->faseDeConstrucao; ?></td>
+            <td><?php echo $propriedade->estadoDeConservacaoID->estadoDeConservacao; ?></td>
+            <td><?php echo $propriedade->numeroQuartos; ?></td>
+            <td><?php echo $propriedade->numeroGaragem; ?></td>
+            <td><?php echo $propriedade->numeroVarandas; ?></td>
+            <td><?php echo $propriedade->numeroQuartosBanhos; ?></td>
+            <td><?php echo $propriedade->permitirAnimais; ?></td>
+            <td><?php echo $propriedade->created_at->format('d/m/Y'); ?></td>
+            <td><?php echo $propriedade->updated_at->format('d/m/Y'); ?></td>
+            <td><a class="btn btn-success tab-botao"{{--  href="{{ URL::route('propriedade.edit', $propriedade->id) }}" --}}>editar </a> </td>
+            <td>
+                <form {{-- action="{{ route('propriedade.destroy', $propriedade->id) }}" --}} method="POST"> <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger tab-botao">Apagar</button>
+                </form>
+            </td>
+        </tr>
+        <?php endforeach ?>
+
+    </table><br>
+    <div class="centrar-botao">
+            <a class="btn btn-info botao-ext bg-success"  {{-- href="{{ URL::route('propriedade.create') }}" --}}>Inserir nova Propriedade...</a>
+    </div><br><br>
+@stop
