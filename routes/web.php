@@ -17,10 +17,14 @@
 
 // route para a página inicial
 Route::view('/','welcome');
+Route::view('arrendar','arrendar');
 Route::resource('home', 'HomeController');
 Route::resource('contactos', 'ContactosController');
 Route::resource('sobre-nos', 'SobrenosController');
-//Route::resource('propriedade', 'PropriedadeController');
 
 Route::get('propriedade', ['as' => 'propriedade', 'uses' => 'PropriedadeController@index']);
+
+Route::get('comprar',['as' => 'propriedade', 'uses' => 'PropriedadeController@procurar']);
+
+
 

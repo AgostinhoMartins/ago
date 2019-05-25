@@ -1,10 +1,10 @@
 /****************************************************************************
-* Nome do ficheiro: style.css                                               *
-* Website: agostinhomartins.com                                             *
+* Nome do ficheiro: style2.css                                              *
+* UC: Projeto Multimédia                                                    *
 * @author Agostinho Martins                                                 *
 * @versão 1.0                                                               *
-* Data: 5 Maio de 2019                                                      *
-* Descrição: Folha de estilos styles.css do website agostinhomartins.com    *
+* Data: 25 Maio de 2019                                                     *
+* Descrição: Folha de estilos styles2.css do website agostinhomartins.com   *
 ****************************************************************************/
 @charset "utf-8";
 
@@ -116,7 +116,7 @@ label{
         /* margin: 0 80px 0 80px; */
     }
     .navbar-brand {
-        background-image: url("../imagens/logoAgo26b.png");
+        background-image: url("../imagens/logoAgo34.png");
         background-repeat: no-repeat;
         background-position: center;
         width : 14em;
@@ -207,10 +207,3 @@ label{
 @media screen and (max-width : 576px) and (min-width:0px) {
 
 }
-
-
-
-
-
-
-

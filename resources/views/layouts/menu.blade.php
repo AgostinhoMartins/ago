@@ -20,11 +20,11 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <!-- Botões do meio do menu -->
                 <ul class="navbar-nav botoes-do-menu-do-meio">
-                    <li class="nav-item active"><a href="#" class="nav-link">INÍCIO</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">COMPRAR</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">ARRENDAR</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">CONTACTOS</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">SOBRE NÓS?</a></li>
+                    <li class="nav-item {{ request()->is('home') ? 'active' : '' }}"><a href="{{ URL::to('home') }}" class="nav-link">INÍCIO</a></li>
+                    <li class="nav-item {{ request()->is('comprar') ? 'active' : '' }}"><a href="{{ URL::to('comprar') }}" class="nav-link">COMPRAR</a></li>
+                    <li class="nav-item {{ request()->is('arrendar') ? 'active' : '' }}"><a href="{{ URL::to('arrendar') }}" class="nav-link">ARRENDAR</a></li>
+                    <li class="nav-item {{ request()->is('contactos') ? 'active' : '' }}"><a href="{{ URL::to('contactos') }}" class="nav-link">CONTACTOS</a></li>
+                    <li class="nav-item {{ request()->is('sobre-nos') ? 'active' : '' }}"><a href="{{ URL::to('sobre-nos') }}" class="nav-link">SOBRE NÓS</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto botaologin">

@@ -1,9 +1,9 @@
 /*******************************************************************
 * Nome do ficheiro: style.css                                      *
-* UC: P2                                                           *
+* UC: Projeto Multimédia                                           *
 * @author Agostinho Martins                                        *
 * @versão 1.1                                                      *
-* Data: 5 Maio de 2019                                             *
+* Data: 25 Maio de 2019                                            *
 * Descrição: Folha de estilos styles.css do website da empresa AGO *
 ********************************************************************/
 @charset "utf-8";
@@ -195,6 +195,17 @@ section {
         padding-bottom: 15em;
         margin-left: 2.5em;
         margin-right: 2.5em;
+    }
+
+    .tab-center{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .centrar-botao{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
     }
 }
 

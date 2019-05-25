@@ -39,4 +39,5 @@ class Propriedade extends Model
         echo $fillable;
         return $this->belongsTo('App\EstadoDeConservacao');
     }
+
 }

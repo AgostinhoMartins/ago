@@ -9,6 +9,7 @@ use App\FaseDeConstrucao;
 use App\EstadoDeConservacao;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
@@ -33,6 +34,39 @@ class PropriedadeController extends Controller
         }
         return view('propriedades.index', compact('propriedades'));
     }
+
+
+/*     // listar cidades para o query
+    public function listarCidades()
+    {
+        $propriedades = Propriedade::where( 'cidade', 'Coimbra')->get();
+
+        foreach($propriedades as $propriedade){
+            $propriedade->cidade = Propriedade::find($propriedade->cidade);
+            $propriedade->tipoDePropriedadeID = TipoDePropriedade::find($propriedade->tipoDePropriedadeID);
+            $propriedade->estadoJuridicoID = EstadoJuridico::find($propriedade->estadoJuridicoID);
+            $propriedade->faseDeConstrucaoID = FaseDeConstrucao::find($propriedade->faseDeConstrucaoID);
+            $propriedade->estadoDeConservacaoID = EstadoDeConservacao::find($propriedade->estadoDeConservacaoID);
+        }
+
+        return view('propriedades.comprar', compact('propriedades'));
+    } */
+
+  // listar cidades para o query
+  public function procurar(Request $request)
+  {
+        $search = $request->get('search');
+        $propriedades = Propriedade::where('cidade', 'like', '%'.$search.'%')->get();
+        foreach($propriedades as $propriedade){
+            $propriedade->cidade = Propriedade::find($propriedade->cidade);
+            $propriedade->tipoDePropriedadeID = TipoDePropriedade::find($propriedade->tipoDePropriedadeID);
+            $propriedade->estadoJuridicoID = EstadoJuridico::find($propriedade->estadoJuridicoID);
+            $propriedade->faseDeConstrucaoID = FaseDeConstrucao::find($propriedade->faseDeConstrucaoID);
+            $propriedade->estadoDeConservacaoID = EstadoDeConservacao::find($propriedade->estadoDeConservacaoID);
+        }
+        return view('propriedades.comprar', compact('propriedades'));
+
+  }
 
     /**
      * Show the form for creating a new resource.
@@ -99,4 +133,6 @@ class PropriedadeController extends Controller
     {
         //
     }
+
+
 }

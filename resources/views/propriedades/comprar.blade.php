@@ -1,6 +1,6 @@
 <?php
 /**************** Descrição do documento ****************
-* Nome do ficheiro: index.blade.php                     *
+* Nome do ficheiro: comprar.blade.php                     *
 * UC: Projeto Multimédia                                *
 * @autor Agostinho Martins                              *
 * @versão 1.0                                           *
@@ -8,7 +8,7 @@
 * Descrição: Lista das Propriedades do site AGO          *
 ********************************************************/
 ?>
-@extends('layouts.master')
+@extends('layouts.master2')
 
 @section('content')
     <br>
@@ -73,6 +73,6 @@
 
     </table><br>
     <div class="centrar-botao">
-            <a class="btn btn-info botao-ext bg-success justify-content-center" {{-- href="{{ URL::route('propriedade.create') }}" --}}>Inserir nova Propriedade...</a>
+            <a class="btn btn-info botao-ext bg-success" {{-- href="{{ URL::route('propriedade.create') }}" --}}>Inserir nova Propriedade...</a>
     </div><br><br>
 @stop
