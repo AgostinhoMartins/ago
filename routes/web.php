@@ -16,8 +16,11 @@
 
 
 // route para a página inicial
-Route::view('/','home');
+Route::view('/','welcome');
 Route::resource('home', 'HomeController');
 Route::resource('contactos', 'ContactosController');
 Route::resource('sobre-nos', 'SobrenosController');
-Route::resource('propriedade', 'PropriedadeController');
+//Route::resource('propriedade', 'PropriedadeController');
+
+Route::get('propriedade', ['as' => 'propriedade', 'uses' => 'PropriedadeController@index']);
+
