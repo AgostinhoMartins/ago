@@ -61,7 +61,7 @@
             <td><?php echo $propriedade->permitirAnimais; ?></td>
             <td><?php echo $propriedade->created_at->format('d/m/Y'); ?></td>
             <td><?php echo $propriedade->updated_at->format('d/m/Y'); ?></td>
-            <td><a class="btn btn-success tab-botao"{{--  href="{{ URL::route('propriedade.edit', $propriedade->id) }}" --}}>editar </a> </td>
+            <td><a class="btn btn-success tab-botao" {{--  href="{{ URL::route('propriedade.edit', $propriedade->id) }}" --}}>editar </a> </td>
             <td>
                 <form {{-- action="{{ route('propriedade.destroy', $propriedade->id) }}" --}} method="POST"> <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="hidden" name="_method" value="DELETE">
