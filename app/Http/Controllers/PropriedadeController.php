@@ -30,10 +30,6 @@ class PropriedadeController extends Controller
             $propriedade->estadoJuridicoID = EstadoJuridico::find($propriedade->estadoJuridicoID);
             $propriedade->faseDeConstrucaoID = FaseDeConstrucao::find($propriedade->faseDeConstrucaoID);
             $propriedade->estadoDeConservacaoID = EstadoDeConservacao::find($propriedade->estadoDeConservacaoID);
-            // $propriedade->tipoDePropriedade = null;
-            // $propriedade->estadoJuridico = null;
-            // $propriedade->faseDeConstrucao = null;
-            // $propriedade->estadoDeConservacao = null;
         }
         return view('propriedades.index', compact('propriedades'));
     }
