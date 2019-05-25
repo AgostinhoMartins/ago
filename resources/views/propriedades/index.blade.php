@@ -4,8 +4,8 @@
 * UC: Projeto Multimédia                                *
 * @autor Agostinho Martins                              *
 * @versão 1.0                                           *
-* Data: 24 Maio de 2019                                 *
-* Descrição: Lista de Propriedades do site AGO          *
+* Data: 25 Maio de 2019                                 *
+* Descrição: Lista das Propriedades do site AGO          *
 ********************************************************/
 ?>
 @extends('layouts.master')
