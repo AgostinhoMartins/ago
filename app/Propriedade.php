@@ -10,7 +10,7 @@ class Propriedade extends Model
 {
     protected $table = 'propriedade';
     protected $primarykey = 'id';
-    protected $fillable = array('nomePropriedade','cidade','freguesia','zona','codigoPostal','areaPropriedade','tipologia','certificadoEnergia','numeroQuartos','numeroGaragem','numeroVarandas','numeroQuartosBanhos','permitirAnimais','created_at', 'updated_at');
+    protected $fillable = array('referencia, nomePropriedade','cidade','distrito','concelho','freguesia','zona','codigoPostal','areaPropriedade','tipologia','assoalhadas','certificadoEnergia','numeroQuartos','numeroGaragem','estacionamento','numeroVarandas','numeroQuartosBanhos','permitirAnimais','frasePublicidadeCurta','frasePublicidadeExtensa','descricao','created_at', 'updated_at');
 
     public $timestamps = true;
 

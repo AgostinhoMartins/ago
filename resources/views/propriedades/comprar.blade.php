@@ -5,7 +5,7 @@
 * @autor Agostinho Martins                              *
 * @versão 1.0                                           *
 * Data: 25 Maio de 2019                                 *
-* Descrição: Lista das Propriedades do site AGO          *
+* Descrição: Lista das Propriedades do website AGO      *
 ********************************************************/
 ?>
 @extends('layouts.master2')
@@ -13,26 +13,16 @@
 @section('content')
     <br>
     <table class="table-bordered table-sm text-center tab-center">
-        <tr class="bg-success tab-texto">
+        <tr class="bg-info tab-texto">
 
             <th>ID</th>
+            <th>Ref.</th>
             <th>Nome da Propriedade</th>
             <th>Cidade</th>
-            <th>Freguesia</th>
-            <th>Zona</th>
-            <th>Codigo Postal</th>
             <th>Tipo de propriedade</th>
-            <th>Area da Propriedade</th>
             <th>Estado Juridico</th>
             <th>Tipologia</th>
-            <th>Certificado de Energia</th>
-            <th>Fase de construcao</th>
-            <th>Estado de conservacao</th>
-            <th>Numero de Garagens</th>
             <th>Numero de Quartos</th>
-            <th>Numero de varandas</th>
-            <th>Numero de quartos de banhos</th>
-            <th>Permitir animais</th>
             <th>Data (inserção)</th>
             <th>Data (atualização)</th>
             <th>Editar</th>
@@ -42,23 +32,13 @@
         <?php foreach($propriedades as $propriedade): ?>
         <tr>
             <td><?php echo $propriedade->id; ?></td>
+            <td><?php echo $propriedade->referencia; ?></td>
             <td><?php echo $propriedade->nomePropriedade; ?></td>
             <td><?php echo $propriedade->cidade; ?></td>
-            <td><?php echo $propriedade->freguesia; ?></td>
-            <td><?php echo $propriedade->zona; ?></td>
-            <td><?php echo $propriedade->codigoPostal; ?></td>
             <td><?php echo $propriedade->tipoDePropriedadeID->tipoDePropriedade; ?></td>
-            <td><?php echo $propriedade->areaPropriedade; ?></td>
             <td><?php echo $propriedade->estadoJuridicoID->estadoJuridico; ?></td>
             <td><?php echo $propriedade->tipologia; ?></td>
-            <td><?php echo $propriedade->certificadoEnergia; ?></td>
-            <td><?php echo $propriedade->faseDeConstrucaoID->faseDeConstrucao; ?></td>
-            <td><?php echo $propriedade->estadoDeConservacaoID->estadoDeConservacao; ?></td>
             <td><?php echo $propriedade->numeroQuartos; ?></td>
-            <td><?php echo $propriedade->numeroGaragem; ?></td>
-            <td><?php echo $propriedade->numeroVarandas; ?></td>
-            <td><?php echo $propriedade->numeroQuartosBanhos; ?></td>
-            <td><?php echo $propriedade->permitirAnimais; ?></td>
             <td><?php echo $propriedade->created_at->format('d/m/Y'); ?></td>
             <td><?php echo $propriedade->updated_at->format('d/m/Y'); ?></td>
             <td><a class="btn btn-success tab-botao" {{--  href="{{ URL::route('propriedade.edit', $propriedade->id) }}" --}}>editar </a> </td>
@@ -73,6 +53,6 @@
 
     </table><br>
     <div class="centrar-botao">
-            <a class="btn btn-info botao-ext bg-success" {{-- href="{{ URL::route('propriedade.create') }}" --}}>Inserir nova Propriedade...</a>
+            <a class="btn btn-info botao-ext text-white" {{-- href="{{ URL::route('propriedade.create') }}" --}}>Inserir nova Propriedade...</a>
     </div><br><br>
 @stop
