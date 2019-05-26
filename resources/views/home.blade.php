@@ -46,7 +46,7 @@
                                                      <li><a class="dropdown-item" href="#">Arrendar</a></li>
                                                  </div>
                                              </div>
-                                             <input type="search" name="search" class="form-control" placeholder="Procurar por cidade ex: Coimbra" aria-label="Text input with dropdown button">
+                                             <input type="search" name="pesquisa" class="form-control" placeholder="Procurar por cidade ex: Coimbra" aria-label="Text input with dropdown button">
                                              <span class="input-group-prepend">
                                                 <button type="submit" class="btn btn-primary">Procurar</button>
                                              </span>
