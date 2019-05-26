@@ -17,6 +17,7 @@
 
             <th>ID</th>
             <th>Ref.</th>
+            <th>Fotografia</th>
             <th>Nome da Propriedade</th>
             <th>Cidade</th>
             <th>Tipo de propriedade</th>
@@ -29,10 +30,12 @@
             <th>Apagar</th>
         </tr>
 
+
         <?php foreach($propriedades as $propriedade): ?>
         <tr>
             <td><?php echo $propriedade->id; ?></td>
             <td><?php echo $propriedade->referencia; ?></td>
+            <td><img src="imagens/propriedade/{{$propriedade->linkImagem}}" /></td>
             <td><?php echo $propriedade->nomePropriedade; ?></td>
             <td><?php echo $propriedade->cidade; ?></td>
             <td><?php echo $propriedade->tipoDePropriedadeID->tipoDePropriedade; ?></td>

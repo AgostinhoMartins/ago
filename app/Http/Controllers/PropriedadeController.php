@@ -32,9 +32,24 @@ class PropriedadeController extends Controller
             $propriedade->faseDeConstrucaoID = FaseDeConstrucao::find($propriedade->faseDeConstrucaoID);
             $propriedade->estadoDeConservacaoID = EstadoDeConservacao::find($propriedade->estadoDeConservacaoID);
         }
+
         return view('propriedades.index', compact('propriedades'));
     }
 
+     // listar cidades para o query
+    public function procurar(Request $request)
+    {
+            $pesquisa = $request->get('pesquisa');
+            $propriedades = Propriedade::where('cidade', 'like', '%'.$pesquisa.'%')->get();
+            foreach($propriedades as $propriedade){
+                $propriedade->tipoDePropriedadeID = TipoDePropriedade::find($propriedade->tipoDePropriedadeID);
+                $propriedade->estadoJuridicoID = EstadoJuridico::find($propriedade->estadoJuridicoID);
+                $propriedade->faseDeConstrucaoID = FaseDeConstrucao::find($propriedade->faseDeConstrucaoID);
+                $propriedade->estadoDeConservacaoID = EstadoDeConservacao::find($propriedade->estadoDeConservacaoID);
+            }
+            return view('propriedades.comprar', compact('propriedades'));
+
+    }
 
 /*     // listar cidades para o query
     public function listarCidades()
@@ -51,21 +66,6 @@ class PropriedadeController extends Controller
 
         return view('propriedades.comprar', compact('propriedades'));
     } */
-
-  // listar cidades para o query
-  public function procurar(Request $request)
-  {
-        $pesquisa = $request->get('pesquisa');
-        $propriedades = Propriedade::where('cidade', 'like', '%'.$pesquisa.'%')->get();
-        foreach($propriedades as $propriedade){
-            $propriedade->tipoDePropriedadeID = TipoDePropriedade::find($propriedade->tipoDePropriedadeID);
-            $propriedade->estadoJuridicoID = EstadoJuridico::find($propriedade->estadoJuridicoID);
-            $propriedade->faseDeConstrucaoID = FaseDeConstrucao::find($propriedade->faseDeConstrucaoID);
-            $propriedade->estadoDeConservacaoID = EstadoDeConservacao::find($propriedade->estadoDeConservacaoID);
-        }
-        return view('propriedades.comprar', compact('propriedades'));
-
-  }
 
     /**
      * Show the form for creating a new resource.

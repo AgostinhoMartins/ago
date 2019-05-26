@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}" >
         <link rel="stylesheet" type="text/css" href="{{ asset('css/tempusdominus-bootstrap-4.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('fonts/fontawesome-free/css/all.css') }}">
-        <script  src="{{ asset('js/jquery-3.4.0.min.js') }}"></script>
     </head>
     <?php
         /**************** Descrição do documento ****************
@@ -39,7 +38,7 @@
         @include('layouts.footer')
 
             <!-- scripts  -->
-            <script src="{{ asset('js/jquery-3.4.0.min.js') }}"></script>
+            <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
             <script src="{{ asset('js/popper.min.js') }}"></script>
             <script src="{{ asset('js/bootstrap.min.js') }}"></script>
             <script src="{{ asset('js/script.js') }}"></script>

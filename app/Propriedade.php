@@ -2,15 +2,13 @@
 
 namespace App;
 
-
-
 use Illuminate\Database\Eloquent\Model;
 
 class Propriedade extends Model
 {
     protected $table = 'propriedade';
     protected $primarykey = 'id';
-    protected $fillable = array('referencia, nomePropriedade','cidade','distrito','concelho','freguesia','zona','codigoPostal','areaPropriedade','tipologia','assoalhadas','certificadoEnergia','numeroQuartos','numeroGaragem','estacionamento','numeroVarandas','numeroQuartosBanhos','permitirAnimais','frasePublicidadeCurta','frasePublicidadeExtensa','descricao','created_at', 'updated_at');
+    protected $fillable = array('referencia','nomePropriedade','linkImagem','cidade','distrito','concelho','freguesia','zona','codigoPostal','areaPropriedade','tipologia','assoalhadas','certificadoEnergia','anoDeConstrucao','numeroQuartos','numeroGaragem','estacionamento','numeroVarandas','numeroQuartosBanhos','permitirAnimais','frasePublicidadeCurta','frasePublicidadeExtensa','descricao','created_at', 'updated_at');
 
     public $timestamps = true;
 
