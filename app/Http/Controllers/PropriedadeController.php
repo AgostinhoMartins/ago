@@ -55,10 +55,9 @@ class PropriedadeController extends Controller
   // listar cidades para o query
   public function procurar(Request $request)
   {
-        $search = $request->get('search');
-        $propriedades = Propriedade::where('cidade', 'like', '%'.$search.'%')->get();
+        $pesquisa = $request->get('pesquisa');
+        $propriedades = Propriedade::where('cidade', 'like', '%'.$pesquisa.'%')->get();
         foreach($propriedades as $propriedade){
-            $propriedade->cidade = Propriedade::find($propriedade->cidade);
             $propriedade->tipoDePropriedadeID = TipoDePropriedade::find($propriedade->tipoDePropriedadeID);
             $propriedade->estadoJuridicoID = EstadoJuridico::find($propriedade->estadoJuridicoID);
             $propriedade->faseDeConstrucaoID = FaseDeConstrucao::find($propriedade->faseDeConstrucaoID);

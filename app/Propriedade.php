@@ -14,7 +14,7 @@ class Propriedade extends Model
 
     public $timestamps = true;
 
-    // NOTA: O campo da tabela "tipoDePropriedadeID" vão buscar o "id" da tabela "tipo_de_propriedade"
+    // NOTA: O campo da tabela "tipoDePropriedadeID" corresponde o campo "id" da tabela "tipo_de_propriedade"
     public function tipoDePropriedadeID()
     {
         echo $fillable;
