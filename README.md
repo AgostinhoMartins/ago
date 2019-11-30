@@ -20,7 +20,6 @@ Descrição da aplicação: A aplicação "AGO Mobile", da empresa fictícia "AG
 <br>
 
 ## Captura de ecrã da aplicação
-Captura de ecras da plataforma Android.
 
 <br>
 
@@ -53,7 +52,6 @@ Plataformas desktop suportadas: Windows, Linux, MacOS
 <br>
 
 ## Captura de ecrã do website
-Captura de ecras da plataforma Android.
 
 <br>
 
