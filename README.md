@@ -16,6 +16,19 @@ Descrição do website: O website da empresa fictícia "AGO construção e imobi
 
 Plataformas desktop suportadas: Windows, Linux, MacOS
 
+<br>
+
+## Captura de ecrã 
+Captura de ecras da plataforma Android.
+
+<br>
+
+| <img src="/AGOMobile/Screenshots/mobile6c.png" width="180px"/>  | <img src="/AGOMobile/Screenshots/mobile8c.png" width="180px"/> | <img src="/AGOMobile/Screenshots/mobile9c.png" width="180px"/>
+  |:---:|:---:|:---:|
+  | <img src="/AGOMobile/Screenshots/mobile10c.png" width="180px"/> | <img src="/AGOMobile/Screenshots/mobile11c.png" width="180px"/> | 
+
+<br>
+
 
 ## Autor
 
