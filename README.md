@@ -55,7 +55,7 @@ Plataformas desktop suportadas: Windows, Linux, MacOS
 
 <br>
 
-<img src="http://agostinhomartins.com/work/website4-c.png" width="300px"/>
+<img src="http://agostinhomartins.com/work/website4-c.png" width="900px"/>
 <br>
 
 
