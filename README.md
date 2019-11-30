@@ -27,10 +27,10 @@ Descrição da aplicação: A aplicação "AGO Mobile", da empresa fictícia "AG
   |:---:|:---:|:---:|
   | Android | iPhone | iPhone 7 |
 <br>
-  | <img src="http://agostinhomartins.com/work/IMG_1236-c.jpg" width="330px"/> |
+  <img src="http://agostinhomartins.com/work/IMG_1236-c.jpg" width="330px"/> 
   Android Samsung Galaxy Note 9
 
-
+<br>
 <br>
 
 ## Website AGO
