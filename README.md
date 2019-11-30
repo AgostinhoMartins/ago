@@ -1,10 +1,42 @@
 # AGO
-<p align="center">LARAVEL 5.8 </p>
-<p><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<br>
+<p align="center">
+  <img src="http://agostinhomartins.com/work/logoAgo27.png">
+</p>
+<br><br>
+
+## AGO MOBILE
+
+Nome da Aplicação: AGO Mobile
+
+Plataforma de desenvolvimento: XAMARIN - Xamarin.Forms 4.0
+
+Descrição da aplicação: A aplicação "AGO Mobile", da empresa fictícia "AGO construção e imobiliária", tem como finalidade divulgar a carteira de imóveis da empresa "AGO" para vender ou arrendar, destingindo-se da concorrência por permitir aos clientes a visualização desses espaços em Realidade Aumentada (AR) e deslocarem-se virtualmente nesses espaços antes mesmo de serem construídos.
+
+Âmbito do projeto: Ser um elemento do Projeto Final de Curso de Agostinho Martins para a Licenciatura do Multimédia do Instituto Superior Miguel torga.
+
+<p><img src="http://agostinhomartins.com/work/xamarin1.png"></p>
+
+<br>
+
+## Captura de ecrã da aplicação
+Captura de ecras da plataforma Android.
+
+<br>
+
+| <img src="http://agostinhomartins.com/work/a1.png" width="180px"/>  | <img src="http://agostinhomartins.com/work/AgoMobile-iPhoneSE-2.png" width="170px"/> | <img src="http://agostinhomartins.com/work/IMG_0004-2.jpg" width="260px"/> |
+  |:---:|:---:|:---:|
+  | Android | iPhone | iPhone 7 |
+<br>
+  | <img src="http://agostinhomartins.com/work/IMG_1236-c.jpg" width="330px"/> |
+  Android Samsung Galaxy Note 9
 
 
+<br>
 
-Website: AGO
+## Website AGO
+
+Nome do Website: AGO
 
 Plataforma de desenvolvimento: LARAVEL
 
@@ -16,17 +48,16 @@ Descrição do website: O website da empresa fictícia "AGO construção e imobi
 
 Plataformas desktop suportadas: Windows, Linux, MacOS
 
+<p><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+
 <br>
 
-## Captura de ecrã 
+## Captura de ecrã do website
 Captura de ecras da plataforma Android.
 
 <br>
 
-| <img src="/AGOMobile/Screenshots/mobile6c.png" width="180px"/>  | <img src="/AGOMobile/Screenshots/mobile8c.png" width="180px"/> | <img src="/AGOMobile/Screenshots/mobile9c.png" width="180px"/>
-  |:---:|:---:|:---:|
-  | <img src="/AGOMobile/Screenshots/mobile10c.png" width="180px"/> | <img src="/AGOMobile/Screenshots/mobile11c.png" width="180px"/> | 
-
+<img src="http://agostinhomartins.com/work/website4-b.png" width="3000px"/>
 <br>
 
 
