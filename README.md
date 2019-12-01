@@ -63,12 +63,13 @@ Plataformas desktop suportadas: Windows, Linux, MacOS
 
 Autor da Aplicação: AGOSTINHO VAZ MARTINS
 
+<br>
 email: agostinhomt@gmail.com
 
 
 ## Informação académica
 
-Projecto Final de curso de Multimédia.
+Projecto final de curso de Multimédia.
 (aluno do 3º ano Letivo de 2018/2019)
 
 Disciplina: PROJETO MULTIMÉDIA
