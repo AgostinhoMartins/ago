@@ -37,7 +37,7 @@ Descrição da aplicação: A aplicação "AGO Mobile", da empresa fictícia "AG
 
 Nome do Website: AGO
 
-Plataforma de desenvolvimento: LARAVEL
+Plataforma de desenvolvimento: LARAVEL 6
 
 Linguagem de programação: PHP
 
