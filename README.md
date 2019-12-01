@@ -68,9 +68,10 @@ email: agostinhomt@gmail.com
 
 ## Informação académica
 
-Aluno do 3º ano Letivo de 2018/2019.
+Projecto Final de curso de Multimédia.
+(aluno do 3º ano Letivo de 2018/2019)
 
-Disciplina: PROJETO MULTIMÉDIA 
+Disciplina: PROJETO MULTIMÉDIA
 
 Professores da disciplina: Prof. Pedro Jerónimo e Prof. Cátia Biscaia
 
