@@ -11,6 +11,8 @@
 @extends('layouts.master')
 
 @section('content')
+<link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}" >
+
 @if ($message = Session::get('success'))
 <div class="alert alert-sucess">
     <p>{{ $message }}</p>
@@ -30,8 +32,8 @@
                          <div id="texto-forma-sobre-a-imagem">
                              <!-- espaço caixa verde 1 -->
                              <div class="caixa1">
-                                 <h2 id="CONSTRUIMOS PROJETOS INOVADORES" class="slogan1">:..<br>CONSTRUÍMOS PROJETOS INOVADORES</h2>
-                                 <h2 class="slogan2">...</h2>
+                                 <h2 id="CONSTRUIMOS PROJETOS INOVADORES" class="slogan1">---<br>CONSTRUÍMOS PROJETOS INOVADORES</h2>
+                                 <h2 class="slogan2"></h2>
                                  <!-- Barra de pesquisa -->
                                  <form id="form2" action="comprar" method="get">
                                      <div class="pesquisa form-group">

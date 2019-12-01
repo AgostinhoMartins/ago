@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/styles3.css') }}">
 
 <div class="caixa-ar-titulo text-center ">
-    <div><span class="titulo-1">Comprar</span> <span class="titulo-2">propriedades</span></div>
+    <div><span class="titulo-1">Arrendar</span> <span class="titulo-2">propriedades</span></div>
 </div>
 
 <?php foreach($propriedades as $propriedade): ?>

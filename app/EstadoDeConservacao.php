@@ -9,6 +9,6 @@ class EstadoDeConservacao extends Model
     protected $table = "estado_de_conservacao";
     protected $primaryKey = "id";
 
-    protected $fillable = array('estadoDeConservacao', 'created_at', 'updated_at');
+    protected $fillable = array('estadoDeConservacao');
     public $timestamps = true;
 }

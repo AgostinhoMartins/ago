@@ -1,21 +1,19 @@
 <?php
 /**************** Descrição do documento ****************
-* Nome do ficheiro: index.blade.php                     *
+* Nome do ficheiro: comprar.blade.php                     *
 * UC: Projeto Multimédia                                *
 * @autor Agostinho Martins                              *
 * @versão 1.0                                           *
-* Data: 26 Maio de 2019                                 *
+* Data: 25 Maio de 2019                                 *
 * Descrição: Lista das Propriedades do website AGO      *
 ********************************************************/
 ?>
 @extends('layouts.master2')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}" >
     <br>
     <table class="table-bordered table-sm text-center tab-center">
         <tr class="bg-info tab-texto">
-
             <th>ID</th>
             <th>Ref.</th>
             <th>Fotografia</th>
@@ -31,12 +29,12 @@
             <th>Apagar</th>
         </tr>
 
+
         <?php foreach($propriedades as $propriedade): ?>
         <tr>
             <td><?php echo $propriedade->id; ?></td>
             <td><?php echo $propriedade->referencia; ?></td>
-            <!-- <td><img src="imagens/propriedade/{ {$propriedade->linkImagem}}" /></td> tirar espaço entre parênteses "imagens/propriedade/lugar1-p.png"-->
-            <td><img src="imagens/propriedade/{{$propriedade->linkImagem}}"/></td>
+            <td><img src="/imagens/propriedade/{{$propriedade->linkImagem}}" /></td>
             <td><?php echo $propriedade->nomePropriedade; ?></td>
             <td><?php echo $propriedade->cidade; ?></td>
             <td><?php echo $propriedade->tipoDePropriedadeID->tipoDePropriedade; ?></td>

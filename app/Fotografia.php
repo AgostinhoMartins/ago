@@ -8,13 +8,18 @@ class Fotografia extends Model
 {
     protected $table = 'fotografia';
     protected $primarykey = 'id';
-    protected $fillable = array('link','created_at', 'updated_at');
+    protected $fillable = array('link');
 
     public $timestamps = true;
 
     public function propriedadeID()
     {
-        echo $fillable;
         return $this->belongsTo('App\Fotografia');
     }
+
+    public function propriedades()
+    {
+        return $this->belongsTo('App\Propriedade');
+    }
+
 }

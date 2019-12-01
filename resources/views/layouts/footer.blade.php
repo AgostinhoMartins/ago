@@ -8,7 +8,7 @@
         * Descrição: Footer do website da empresa AGO           *
         ********************************************************/
 ?>
-<footer class="container-fluid bg-footer">
+<footer class="container-fluid">
     <div class="text-center py-3">© 2019 Copyright:
         <a href="http://agostinhomartins.com/"> Agostinho Martins</a>
     </div>

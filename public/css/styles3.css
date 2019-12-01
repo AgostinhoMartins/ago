@@ -1,0 +1,134 @@
+/****************************************************************************
+* Nome do ficheiro: style2.css                                              *
+* UC: Projeto Multimédia                                                    *
+* @author Agostinho Martins                                                 *
+* @versão 1.0                                                               *
+* Data: 25 Maio de 2019                                                     *
+* Descrição: Folha de estilos styles2.css do website agostinhomartins.com   *
+****************************************************************************/
+@charset "utf-8";
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: SourceSansPro-SemiBold;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+@font-face {
+    font-family: SourceSansPro-Light;
+    src: url("../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
+}
+
+/************************************************************************
+* Definição do Menu                                                     *
+************************************************************************/
+.navbar{
+    font-family: SourceSansPro-regular;
+    font-size: 1.05em;
+    font-weight: 550;
+}
+
+.botaologin{
+    margin-right: auto;
+}
+
+/****
+ Google Map
+******/
+#map {
+    /*height: 400px;  /*altura 400 pixels */
+    /*width: 100%;  /* The width is the width of the web page */
+   }
+
+/***********************************************************************
+* Retira o espaço em branco entre as section                           *
+************************************************************************/
+section {
+    /* margin: 0; */
+                /* padding: 0.1px;*/
+}
+
+/************************************************************************
+* Definição do Menu                                                     *
+************************************************************************/
+
+
+.titulo-1{
+    font-family: SourceSansPro-SemiBold;
+    font-size: 2.9em;
+
+}
+.titulo-2{
+    color: rgb(202, 201, 201);
+    font-family: SourceSansPro-Light;
+    vertical-align: bottom;
+    line-height: 38px;
+    font-size: 2em;
+}
+.titulo-3{
+    font-family: SourceSansPro-Regular;
+    vertical-align: bottom;
+    line-height: -58px;
+    font-size: 1.5em;
+}
+
+.caixa-ar-titulo{
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+/* Large Devices, Wide Screens */
+@media (min-width : 1201px) {
+
+    /* Definição do menu */
+    .navbar-brand {
+        background-image: url("../imagens/logoAgo34.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width : 14em;
+        height : 6em;
+        margin-right: 0.5em;
+        margin-left: 4em;
+        max-width: 1240px;
+    }
+
+    .botoes-do-menu-do-meio{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+/* Medium Devices, Desktops */
+@media screen and (max-width : 1200px) and (min-width:992px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media screen and (max-width : 992px) and (min-width:767px) {
+
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width : 768px) and (min-width:577px) {
+    .caract-imovel-3 {
+        display: none;
+    }
+}
+/* Extra Small Devices, Phones */
+@media screen and (max-width : 576px) and (min-width:0px) {
+    .caract-imovel-2 {
+        display: none;
+    }
+    .caract-imovel-3 {
+        display: none;
+    }
+
+}

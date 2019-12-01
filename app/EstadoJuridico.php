@@ -9,6 +9,6 @@ class EstadoJuridico extends Model
     protected $table = "estado_juridico";
     protected $primaryKey = "id";
 
-    protected $fillable = array('estadoJuridico', 'created_at', 'updated_at');
+    protected $fillable = array('estadoJuridico');
     public $timestamps = true;
 }

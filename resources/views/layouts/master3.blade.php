@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>AGO</title>
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-
         <link rel="stylesheet" type="text/css" href="{{ asset('css/tempusdominus-bootstrap-4.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('fonts/fontawesome-free/css/all.css') }}">
     </head>
