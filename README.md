@@ -69,7 +69,7 @@ email: agostinhomt@gmail.com
 
 ## Informação académica
 
-<div>Projecto final de curso de Multimédia.</div>
+<div>Projecto Final de Curso de Multimédia.</div>
 (aluno do 3º ano Letivo de 2018/2019)
 <br>
 <br>
